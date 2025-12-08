@@ -227,7 +227,6 @@ primed/
 
 For questions or issues:
 - Please contact Luoshu Zhang at luoshu.zhang@ufl.edu
-- GitHub: [Repository link]
 
 ## License
 
