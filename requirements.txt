@@ -1,0 +1,9 @@
+# Core dependencies
+torch>=1.9.0
+numpy>=1.19.0
+biopython>=1.78
+scikit-learn>=0.24.0
+
+# Optional: for CUDA support
+# torch with CUDA can be installed separately following PyTorch official instructions
+# Visit: https://pytorch.org/get-started/locally/
