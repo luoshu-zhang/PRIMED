@@ -223,13 +223,6 @@ primed/
 - Use `--verbose` flag for detailed processing information
 - GPU (CUDA) is automatically used if available
 
-## Citation
-
-If you use PRIMED in your research, please cite:
-```
-[Your citation here]
-```
-
 ## Contact
 
 For questions or issues:
