@@ -13,6 +13,35 @@ pip install torch numpy biopython scikit-learn
 - BioPython >= 1.78
 - scikit-learn >= 0.24
 
+## Quick Start with Example Data
+
+We provide example data to help you get started:
+```bash
+python primed_inference.py \
+  --esm2-dir ./embedding_examples/esm2 \
+  --esm3-dir ./embedding_examples/esm3 \
+  --esmc-dir ./embedding_examples/esmc \
+  --test-datasets DNA-46_Test.txt \
+  --model-path primed_model.pth
+```
+
+**Example files included:**
+- `DNA-46_Test.txt` - Sample test dataset with 46 proteins
+- `embedding_examples/esm2/` - Example ESM2 embeddings
+- `embedding_examples/esm3/` - Example ESM3 embeddings
+- `embedding_examples/esmc/` - Example ESMC embeddings
+
+## Generating Your Own Embeddings
+
+If you want to generate embeddings for your own protein sequences, please refer to the embedding generation scripts in the `embedding_generation/` directory. This includes:
+
+- Scripts for generating ESM2 embeddings (2560-dim)
+- Scripts for generating ESM3 embeddings (1536-dim)
+- Scripts for generating ESMC embeddings (1152-dim)
+- Instructions for processing custom FASTA files
+
+See `embedding_generation/README.md` for detailed instructions.
+
 ## Input Requirements
 
 ### 1. Protein Language Model Embeddings
@@ -170,6 +199,23 @@ Linear(256→64) → ReLU
 Linear(64→1) → Sigmoid
 ```
 
+## Project Structure
+```
+primed/
+├── primed_inference.py           # Main inference script
+├── README.md                     # This file
+├── LICENSE                       # MIT License
+├── requirements.txt              # Python dependencies
+├── optimized_threshold.txt       # Classification threshold
+├── DNA-46_Test.txt              # Example test dataset
+├── embedding_examples/          # Example embeddings
+│   ├── esm2/
+│   ├── esm3/
+│   └── esmc/
+└── embedding_generation/        # Scripts to generate embeddings
+    └── README.md                # Embedding generation guide
+```
+
 ## Notes
 
 - Protein names must match exactly across all embedding directories and FASTA files
@@ -177,7 +223,19 @@ Linear(64→1) → Sigmoid
 - Use `--verbose` flag for detailed processing information
 - GPU (CUDA) is automatically used if available
 
+## Citation
+
+If you use PRIMED in your research, please cite:
+```
+[Your citation here]
+```
+
 ## Contact
 
 For questions or issues:
 - Please contact Luoshu Zhang at luoshu.zhang@ufl.edu
+- GitHub: [Repository link]
+
+## License
+
+This project is licensed under the MIT License.
