@@ -207,7 +207,7 @@ primed/
 ├── LICENSE                       # MIT License
 ├── requirements.txt              # Python dependencies
 ├── optimized_threshold.txt       # Classification threshold
-├── DNA-46_Test.txt              # Example test dataset
+├── datasets/                    # Example test datasets
 ├── embedding_examples/          # Example embeddings
 │   ├── esm2/
 │   ├── esm3/
