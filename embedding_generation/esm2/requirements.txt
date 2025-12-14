@@ -1,0 +1,10 @@
+# ESM2 Embedding Generation Requirements
+# The ESM library is included in the esm/ folder
+
+# Core dependencies
+torch>=1.9.0
+numpy>=1.19.0
+
+# Optional: for CUDA support
+# Install PyTorch with CUDA: https://pytorch.org/get-started/locally/
+# Example: pip install torch --index-url https://download.pytorch.org/whl/cu118
